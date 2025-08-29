@@ -69,11 +69,11 @@ header {
     height: 70px;
     position: fixed;
     z-index: 10;
-    padding: 0 1rem; /* ✅ extra space for mobile */
+    padding: 0 1rem; 
 }
 
 header .logo {
-    margin-left: 0.5rem; /* ✅ logo gap */
+    margin-left: 0.5rem; 
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -92,7 +92,7 @@ header.scrolled {
     width: 25px;
     cursor: pointer;
     z-index: 1000;
-    margin-right: 1.2rem; /* ✅ spacing */
+    margin-right: 1.2rem; 
 }
 .hamburger span {
     height: 3px;
@@ -110,7 +110,7 @@ header.scrolled {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* NAV LINKS */
+
 .links {
     display: none;
     position: absolute;
@@ -242,10 +242,6 @@ main {
     height: 45px;
     padding: 9px;
     border-radius: 50%;
-    /* background-color: var(--accent-color); */
-    /* icon color */
-
-    /* Make the icon white without affecting background */
     filter: invert(1);
     display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .12);

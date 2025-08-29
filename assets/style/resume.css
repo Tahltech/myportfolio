@@ -67,11 +67,11 @@ header {
     height: 70px;
     position: fixed;
     z-index: 10;
-    padding: 0 1rem; /* ✅ extra space for mobile */
+    padding: 0 1rem; 
 }
 
 header .logo {
-    margin-left: 0.5rem; /* ✅ logo gap */
+    margin-left: 0.5rem; 
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -90,7 +90,7 @@ header.scrolled {
     width: 25px;
     cursor: pointer;
     z-index: 1000;
-    margin-right: 1.2rem; /* ✅ spacing */
+    margin-right: 1.2rem; 
 }
 .hamburger span {
     height: 3px;
