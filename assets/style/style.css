@@ -46,6 +46,7 @@
     font-family: "Outfit";
     src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf");
 }
+
 body {
     font-family: "Outfit", sans-serif;
     background-color: var(--lightbackground-color);
@@ -68,7 +69,7 @@ header {
     height: 70px;
     position: fixed;
     z-index: 10;
-    padding: 0 1rem; 
+    padding: 0 1rem;
 }
 
 header .logo {
@@ -82,6 +83,13 @@ header.scrolled {
     border-bottom: 1px solid var(--heading-color);
 }
 
+.headerwritting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50vw;
+
+}
 
 .hamburger {
     display: flex;
@@ -91,19 +99,24 @@ header.scrolled {
     width: 25px;
     cursor: pointer;
     z-index: 1000;
-    margin-right: 1.2rem; }
+    margin-right: 1.2rem;
+}
+
 .hamburger span {
     height: 3px;
     width: 100%;
     background: var(--default-color);
     transition: all 0.4s ease;
 }
+
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
@@ -119,9 +132,11 @@ header.scrolled {
     z-index: 999;
     border-top: 1px solid var(--default-color);
 }
+
 .links.active {
     display: block;
 }
+
 .links ul {
     list-style: none;
     padding: 0;
@@ -131,11 +146,13 @@ header.scrolled {
     gap: 10px;
     text-align: center;
 }
+
 .links a {
     text-decoration: none;
     color: var(--default-color);
     font-size: 1.1rem;
 }
+
 .links a:hover {
     color: var(--nav-dropdown-hover-color);
     transition: 0.3s ease;
@@ -150,9 +167,11 @@ main {
     margin: 6rem 1rem 2rem;
     text-align: center;
 }
+
 .intro h2 {
     font-size: 1.8rem;
 }
+
 .image img {
     max-width: 90%;
     height: auto;
@@ -171,6 +190,7 @@ main {
     gap: 15px;
     justify-content: center;
 }
+
 .social-links li a {
     display: flex;
     align-items: center;
@@ -181,11 +201,13 @@ main {
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .social-links li a img {
     width: 20px;
     height: 20px;
     filter: brightness(0) invert(1);
 }
+
 .social-links li a:hover {
     background: var(--accent-color);
     transform: scale(1.1);
@@ -202,6 +224,7 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 footer .nameintro {
     text-align: center;
     margin: 1rem;
@@ -216,6 +239,7 @@ footer .nameintro {
     gap: 15px;
     justify-content: center;
 }
+
 .gettome li a {
     display: flex;
     align-items: center;
@@ -226,15 +250,18 @@ footer .nameintro {
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .gettome li a img {
     width: 24px;
     height: 24px;
     filter: brightness(0) invert(1);
 }
+
 .gettome li a:hover {
     background: #555;
     transform: scale(1.1);
 }
+
 .copyright {
     border-top: 0.5px solid var(--default-color);
     padding: 1rem;
@@ -247,13 +274,19 @@ footer .nameintro {
         height: 100px;
         padding: 0 2rem;
     }
+
     header .logo {
         margin-left: 0;
         font-size: 1.5rem;
     }
+
     .hamburger {
         display: none;
     }
+
+
+
+
     .links {
         display: flex !important;
         position: static;
@@ -262,6 +295,7 @@ footer .nameintro {
         box-shadow: none;
         width: auto;
     }
+
     .links ul {
         flex-direction: row;
         justify-content: flex-end;
@@ -269,6 +303,7 @@ footer .nameintro {
         gap: 2rem;
         margin: 0;
     }
+
     main {
         flex-direction: row;
         justify-content: space-between;
@@ -278,14 +313,23 @@ footer .nameintro {
         padding: 0 2rem;
         gap: 2rem;
     }
+
     .intro {
         margin-top: 0;
         color: var(--default-color);
         font-size: 1.8rem;
         line-height: 1.4;
     }
+
     .image img {
         width: 350px;
         height: auto;
+    }
+
+    .headerwritting {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: clamp(1rem, 50vw, 15rem);
     }
 }
